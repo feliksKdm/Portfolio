@@ -1,0 +1,44 @@
+body{
+    padding: 4ch;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+a:hover {
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #b3b6ba;
+}
+
+
+
+
+
+.container {
+    padding: 50px;
+    text-align: center;
+    place-items: center;
+    display: grid;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+}
