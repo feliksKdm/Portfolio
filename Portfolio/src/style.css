@@ -25,9 +25,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 h1 {
@@ -95,8 +96,12 @@ button:focus-visible {
   }
 }
 
-canvas {
+#bg {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: block;
 }
