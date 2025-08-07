@@ -48,7 +48,6 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 // jiggle
-const originalPositions = {};
 const objectStates = new Map();
 const mouse = new THREE.Vector2();
 const raycaster = new THREE.Raycaster();
@@ -121,6 +120,11 @@ function animate(time) {
     // 4. Обновляем позицию
     obj.position.add(velocity);
   }
+
+
+  icosahedron.position.x = Math.sin(time * 3) * 5;
+
+
 
   controls.update();
   renderer.render(scene, camera);

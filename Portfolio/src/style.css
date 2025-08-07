@@ -14,8 +14,6 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -64,22 +62,24 @@ h1 {
   color: #888;
 }
 
-button {
+a {
+  text-align: center;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #ffffff;
 }
-button:hover {
+a:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
+a:focus,
+a:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -91,7 +91,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  a {
     background-color: #f9f9f9;
   }
 }
@@ -104,4 +104,12 @@ button:focus-visible {
   height: 100vh;
   z-index: -1;
   display: block;
+}
+
+.contact {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.2em;
+  display: flex;
+  gap: 30px;
 }
